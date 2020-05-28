@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
 </head>
-<body>
 
-<!-- <nav class="navbar navbar-default" style="background-color: #b0f4ff;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">J0bs 4 every1</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-</nav> -->
+<body onload="fadeIn()">
 
-
-<header>
+  <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="video_noaudio.mp4" type="video/mp4">
+      <source src="video_noaudio.mp4" type="video/mp4">
     </video>
     <div class="container ">
-        <div class="d-flex ">
+      <div class="d-flex ">
 
-            <div class="row">
-                <p></p> <!-- p stand for padding-->
-            </div>
-            <!--PADDING TOP IN A NUTSHELL -->
-            <div class="row">
-                <div class="col">
+        <div class="row">
+          <p></p>
+        </div> <!-- p stand for padding-->
+        <!--PADDING TOP IN A NUTSHELL -->
+        <div class="row">
+          <div class="col text-center"><img src="logo.png" style="height: 25%;width: 25%"></div>
+          <div class="col-6 text-center">
+            <hr>
+            <a href="#" class="display-1 menuLink">POST OFFER</a>
+            
+          </div>
+          <div class="col">
 
-                </div>
-                <div class="col-6 ">
-                    <hr>
-                    <img src="logo.png" style="height: 25%;width: 25%" class="float-left py-4">
-                    <a href="#" style="color:white; font-family: 'Balsamiq Sans', cursive; text-underline: none" class="display-1">Post offer</a>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</header>
+    <div class="container mt-4 text-center FadeInContainer">
+      <div class="row mt-4">
+        <div class="col align-self-end">
+          <p>Find your dream job</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="fadeInTextBox">test</div>
+      </div>
+    </div>
+  </header>
 
 
 </body>
