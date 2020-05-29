@@ -14,11 +14,14 @@ async function fadeIn(previouslyGeneratedNumber) {
     else
         fadeIn(random)
 }
-
-$(".Glass").hover(function(){
-    $(this).find("img:last").fadeToggle();
-    console.log("working");
-}, function(){
-    $(this).find("img:last").fadeToggle();
-    console.log("working");
-});
+function changeGlass(direction)
+{
+    if(direction)
+    {
+        $("#glass").attr("src","gray_Lupa.png");
+    }
+    else
+    {
+        $("#glass").attr("src","white_Lupa.png");
+    }
+}

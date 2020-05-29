@@ -1,8 +1,4 @@
 
-.Glass img:last-child {
-  display:none;
-}
-
 .FadeInClass{
   animation-name: fade_in;
   animation-duration: 3s;
