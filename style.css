@@ -1,3 +1,4 @@
+
 .FadeInClass{
   animation-name: fade_in;
   animation-duration: 3s;
@@ -6,9 +7,21 @@
 .jobBaseText{
   color:white; 
   font-family: 'Oswald', sans-serif;
+  font-size: 300%; 
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jobSubText{
+  color:white; 
+  font-family: 'Oswald', sans-serif;
   font-size: 200%; 
   text-decoration: none;
   text-shadow: 2px 2px 4px #000000;
+}
+
+#HRline{
+  border-color:white !important;
 }
 
 .FadeOutClass{
@@ -18,7 +31,7 @@
 
 .FadeInContainer {
   background-color:rgba(0, 0, 0, 0.349);
-  border: 1px solid red;
+  border: 1px solid white;
 }
 .snimka{
   position: relative;
@@ -45,7 +58,7 @@
 
 .menuLink:hover {
   cursor: pointer;
-  font-size: 210%; 
+  font-size: 200%; 
   color: rgb(165, 165, 165);
   transition: transform 3s;
   border-color: black; 
