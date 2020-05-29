@@ -1,4 +1,8 @@
 
+.Glass img:last-child {
+  display:none;
+}
+
 .FadeInClass{
   animation-name: fade_in;
   animation-duration: 3s;
@@ -10,6 +14,18 @@
   font-size: 300%; 
   text-decoration: none;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.jobSubText{
+  color:white; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 200%; 
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#HRline{
+  border-color:white !important;
 }
 
 .FadeOutClass{
