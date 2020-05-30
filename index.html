@@ -12,7 +12,7 @@
   <script src="index.js"></script>
 </head>
 
-<body style="background-color:#16334a;" onload="fadeIn(-1)">
+<body style="background-color:#16334a;" onload="setInterval(fadeIn, 6000)">
 
 <header>
   <div class="overlay"></div>
@@ -45,10 +45,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col"><img id="glass"  src="white_Lupa.png" onmouseover="changeGlass(true)" onmouseout="changeGlass(false)"></div>
+      <div class="col"><div id="searchBar" style="display:hidden">ugabuga</div><img id="glass" style="cursor:pointer;" src="white_Lupa.png" onmouseover="changeGlass(true)" onmouseout="changeGlass(false)" onclick="expandSearchBar();"></div>
     </div>
     <div class="row">
-      <div class="col jobSubText" id="fadeInTextBox">test</div>
+      <div class="col jobSubText pb-2" id="fadeInTextBox">Welcome to ProfMarket</div>
     </div>
   </div>
 </header>
