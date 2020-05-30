@@ -1,56 +1,57 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
+<!DOCTYPE html>
+<html>
 
-<!--<head>-->
-<!--  <meta charset="utf-8">-->
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
-<!--  <link rel="stylesheet" href="style.css">-->
-<!--  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-<!--  <script src="index.js"></script>-->
-<!--</head>-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js%22%3E"></script>
+  <script src="index.js"></script>
+</head>
 
-<body onload="fadeIn()">
+<body style="background-color:#16334a;" onload="fadeIn(-1)">
 
-  <header>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="video_noaudio.mp4" type="video/mp4">
-    </video>
-    <div class="container ">
-      <div class="d-flex ">
-
-        <div class="row">
-          <p></p>
-        </div> <!-- p stand for padding-->
-        <!--PADDING TOP IN A NUTSHELL -->
-        <div class="row">
-          <div class="col text-center"><img src="logo.png" style="height: 25%;width: 25%"></div>
-          <div class="col-6 text-center">
-            <hr>
-
-              <a href="#" class="display-1 menuLink">POST OFFER&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <a href="#" class="display-1 menuLink">LOGIN</a>
-          </div>
-          <div class="col">
-
-          </div>
-        </div>
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="video_noaudio.mp4" type="video/mp4">
+  </video>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12 mt-2">
+        <div class="col text-center"><img src="logo.png" style="height: 25%;width: 25%"></div>
       </div>
     </div>
-    <div class="container mt-4 text-center FadeInContainer">
-      <div class="row mt-4">
-        <div class="col align-self-end">
-          <p>Find your dream job</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="fadeInTextBox">test</div>
+    <div class="row">
+      <div class="col text-center">
+        <hr id="HRline">
       </div>
     </div>
-  </header>
+    <div class="row text-center">
+      <div class="col-lg-3"><a href="#" class="display-1 menuLink">POST OFFER</a></div>
+      <div class="col-lg-3"><a href="#" class="display-1 menuLink">BROWSE OFFERS</a></div>
+      <div class="col-lg-3"><a href="#" class="display-1 menuLink">LOGIN</a></div>
+      <div class="col-lg-3"><a href="#" class="display-1 menuLink">REGISTER</a></div>
+    </div>
+  </div>
+  </div>
+  <div class="container mt-5 text-center FadeInContainer">
+    <div class="row mt-4">
+      <div class="col align-self-end">
+        <p class="jobBaseText">Find your dream job!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><img id="glass"  src="white_Lupa.png" onmouseover="changeGlass(true)" onmouseout="changeGlass(false)"></div>
+    </div>
+    <div class="row">
+      <div class="col jobSubText" id="fadeInTextBox">test</div>
+    </div>
+  </div>
+</header>
 
 
 </body>
