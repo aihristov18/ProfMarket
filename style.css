@@ -1,6 +1,51 @@
+
+.FadeInClass{
+  animation-name: fade_in;
+  animation-duration: 3s;
+}
+
+.jobBaseText{
+  color:white; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 300%; 
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jobSubText{
+  color:white; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 200%; 
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#HRline{
+  border-color:white !important;
+}
+
+.FadeOutClass{
+  animation-name: fade_out;
+  animation-duration: 3s;
+}
+
 .FadeInContainer {
-  background-color:red;
-  border: 1px solid red;
+  background-color:rgba(0, 0, 0, 0.349);
+  border: 1px solid white;
+}
+.snimka{
+  position: relative;
+}
+
+.compName{
+  position: absolute;
+  bottom: 7%;
+  right: 6%;
+  background: rgba(255, 173, 19, 0.7);
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius:.25rem!important;
 }
 
 .menuLink{
@@ -13,12 +58,13 @@
 
 .menuLink:hover {
   cursor: pointer;
-  font-size: 210%; 
+  font-size: 200%; 
   color: rgb(165, 165, 165);
   transition: transform 3s;
   border-color: black; 
   text-decoration:none;
 }
+
 
 header {
     position: relative;
@@ -67,4 +113,20 @@ header {
     header video {
       display: none;
     }
+  }
+
+  @keyframes fade_in{
+    0% {opacity:0};
+    25%{opacity:0.25};
+    50%{opacity:0.5};
+    75%{opacity:0.75};
+    100%{opacity:1};
+  }
+
+  @keyframes fade_out{
+    0% {opacity:1};
+    25%{opacity:0.75};
+    50%{opacity:0.5};
+    75%{opacity:0.25};
+    100%{opacity:0};
   }
