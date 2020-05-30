@@ -15,6 +15,21 @@ class FrontController extends Controller
 //        dd($jobs);
        return view('index',compact('jobs'));
     }
+    public function jobs()
+    {
+        $jobs=PostJob::all();
+//        dd($jobs);
+       return view('jobs',compact('jobs'));
+    }
+
+
+    public function show($id)
+    {
+        $job=PostJob::where('id',$id)->first();
+
+
+        return view('job',compact('job'));
+    }
 
     public function postContact(Request $request)
     {

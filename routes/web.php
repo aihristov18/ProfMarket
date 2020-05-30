@@ -38,3 +38,5 @@ Route::get('/home', 'PostJobController@index')->name('home');
 Route::post('/create', 'PostJobController@create')->name('create');
 Route::any('/send_message', 'FrontController@postContact')->name('send_message');
 Route::get('/', 'FrontController@index')->name('index');
+Route::get('/job/{id}', 'FrontController@show')->name('job');
+Route::get('/jobs', 'FrontController@jobs')->name('jobs');
