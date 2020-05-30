@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('layouts.navbar')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -12,7 +13,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Company Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -58,6 +59,57 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone number') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="text" class="form-control" name="phone" required ">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="text" class="form-control" name="city" required">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address of the company') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="address" type="text" class="form-control @error('name') is-invalid @enderror" name="address" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('State or private business') }}</label>
+
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline pt-2">
+                                    <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="private" checked>
+                                    <label class="form-check-label" for="inlineRadio1">Private</label>
+                                </div>
+                                <div class="form-check form-check-inline  pt-2">
+                                    <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="state" >
+                                    <label class="form-check-label" for="inlineRadio2">State</label>
+                                </div>
+<!--                                <input id="address" type="radio" class="form-control @error('name') is-invalid @enderror" name="address" value="{{ old('name') }}" required autocomplete="name" autofocus>-->
+
+                                @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
 
