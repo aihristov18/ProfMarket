@@ -28,6 +28,11 @@ function changeGlass(direction) {
 
 function expandSearchBar() {
     GlassIsOn = false;
-    $("#searchBar").css("display", "inline")
-    $("#glass").css("display", "none");
+    
+    $("#glass").fadeOut('slow',()=>{
+        $("#glass").css("display", "none");
+        $("#searchBar").fadeIn();
+        $("#searchBar").css("display", "block")
+    })
+    
 }
