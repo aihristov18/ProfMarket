@@ -7,7 +7,7 @@
             {{ csrf_field() }}
             <h4 style="margin-bottom:15px;">{{__('Contact us')}}</h4>
             <div itemscope itemtype="http://schema.org/Organization">
-                <p itemprop="name" style="font-weight:600;">EDI Rent a Car - Plovdiv, Bulgaria</p>
+                <p itemprop="name" style="font-weight:600;">ProfMarket - Burgas, Bulgaria</p>
 
                 <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <span itemprop="addressLocality">  {{__('contact-us-address')}}</span>
@@ -15,22 +15,11 @@
                 </p>
 
                 <p>
-                    {{__('Email')}}: <a href="mailto:info@edirentacar.bg">info@edirentacar.bg</a>
+                    {{__('Email')}}: <a href="mailto:info@edirentacar.bg">profmarketofficial@gmail.com</a>
                 </p>
 
                 <p>
-                    {{__('office-phone')}}:<a href="tel:+35932394949" itemprop="telephone"> +359/32/394949</a>
-                </p>
-
-                <p>
-                    {{__('mobile-phone')}}:<a href="tel:+359889021020" itemprop="telephone"> +359/889021020 </a>
-                </p>
-
-                <p>
-                    {{__('additional-contacts')}}
-                    <a href="skype:edy-2004?call" target="_blank"><img src="/img/Skype.jpg" style="height:30px;"></a>
-                    <a href="viber://add?number=359889021020" target="_blank"><img src="/img/viber.png" style="height:30px;"></a>
-                    <a href="https://wa.me/359889021020" target="_blank"><img src="/img/WhatsApp.png"style="height:30px;"></a>
+                    {{__('CEO-phone')}}:<a href="tel:" itemprop="telephone"> (951) 974-0423</a>
                 </p>
 
 
@@ -64,7 +53,7 @@
                 </div>
                 <div class="map-section col-12 col-sm-6">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.3960980724833!2d24.752087915687717!3d42.1418099568485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1a5c3555cbd%3A0x6e3c4c7e4d891f28!2z0YPQuy4g4oCe0JrQsNC_0LjRgtCw0L0g0KDQsNC50YfQviDQndC40LrQvtC70L7QsuKAnCA1MiwgNDAwMCDQmtCw0LzQtdC90LjRhtCwIDEsINCf0LvQvtCy0LTQuNCy!5e0!3m2!1sbg!2sbg!4v1569245809947!5m2!1sbg!2sbg" width="800" height="300" frameborder="0" style="border:0; max-width:100%" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.5711814541432!2d27.476706315460728!3d42.50066837917769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69511e7399057%3A0xbaf6f2b19f353b57!2sMusala%20Soft%20Ltd.!5e0!3m2!1sen!2sbg!4v1590940156747!5m2!1sen!2sbg" width="800" height="300" frameborder="0" style="border:0; max-width:100%" allowfullscreen=""></iframe>
                 </div>
             </div>
 
