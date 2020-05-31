@@ -41,10 +41,11 @@ class PostJobController extends Controller
                 'title' => 'required',
                 'salary' => 'required',
                 'description' => 'required',
-                'img' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
+                'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'time' => 'required',
+                'jobaddress' => 'required'
         ]);
-
+        $user=(User::find(Auth::user())->first());
         if ($request->hasFile('img')){
             $imageName = time().'.'.$request->img->extension();
             $cover = $request->file('img');
@@ -52,12 +53,16 @@ class PostJobController extends Controller
         Storage::disk('public')->put($cover->getFilename().'.'.$extension,  File::get($cover));
         }
         $job=new PostJob();
+        $job->user_id=$user->id;
         $job->title=$request->title;
         $job->salary=$request->salary;
         $job->description=$request->description;
+        $job->time=$request->time;
+        $job->jobaddress=$request->jobaddress;
         $job->mime = $cover->getClientMimeType();
         $job->original_filename = $cover->getClientOriginalName();
         $job->filename =  $imageName;
+
         $job->save();
        $request->img->move(public_path('img'), $imageName);
         return redirect('/')

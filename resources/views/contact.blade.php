@@ -60,4 +60,9 @@
         </form>
     </div>
 </section>
+
+<div class="fixed-bottom">
+    @include('layouts/footer')
+</div>
+
 @endsection

@@ -126,4 +126,7 @@
         </div>
     </div>
 </div>
+<div class="fixed-bottom">
+    @include('layouts/footer')
+</div>
 @endsection

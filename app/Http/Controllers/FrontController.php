@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\PostJob;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
@@ -26,9 +27,11 @@ class FrontController extends Controller
     public function show($id)
     {
         $job=PostJob::where('id',$id)->first();
+        $user=User::where('id',$job->user_id)->first();
 
 
-        return view('job',compact('job'));
+
+        return view('job',compact('job','user'));
     }
 
     public function postContact(Request $request)
@@ -40,10 +43,10 @@ class FrontController extends Controller
                 'email' => 'required|string|email|max:255|',
 
         ]);
-        $email='rentacaredi.bg@gmail.com';
+
         $data = array(
                 'email' => $request->email,
-                'recipient' => 'rentacaredi.bg@gmail.com',
+                'recipient' => 'profmarketofficial@gmail.com',
                 'name' => $request->name,
                 'bodyMessage' => $request->message,
 

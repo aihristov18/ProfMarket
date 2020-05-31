@@ -70,7 +70,21 @@
                         </div>
 
 
+                        <div class="form-group row">
+                            <label for="jobaddress" class="col-md-4 col-form-label text-md-right">{{ __('Job address') }}</label>
 
+                            <div class="col-md-6">
+                                <input id="jobaddress" type="text" class="form-control" name="jobaddress" required autocomplete="jobaddress">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="time" class="col-md-4 col-form-label text-md-right">{{ __('Work time') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="time" type="text" class="form-control" name="time" required autocomplete="time">
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
                                 <textarea  class="col-md-6" id="description" type="text" class="form-control" name="description" required"></textarea>
@@ -97,5 +111,7 @@
         </div>
     </div>
 </div>
-
+<div class="fixed-bottom">
+    @include('layouts/footer')
+</div>
 @endsection
