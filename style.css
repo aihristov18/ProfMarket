@@ -155,3 +155,10 @@ header {
       display: none;
     }
   }
+
+  @media only screen and (max-width: 600px)
+  {
+    .JobContainer{
+      max-height: 400px;
+    }
+  }
