@@ -1,7 +1,40 @@
+.JobContainer{
+  
+  transition: background-color 0.3s linear;
+  background-color:white;
+  overflow:hidden;
+  max-height:150px;
+  padding: 0;
+  margin: 0;
+}
 
-.FadeInClass{
-  animation-name: fade_in;
-  animation-duration: 3s;
+.JobContainer:hover{
+  transition: background-color 0.3s linear;
+  background-color:rgb(214, 212, 212);
+  cursor: pointer;
+}
+
+.JobListingHR{
+  border-color: #16334a;
+}
+
+.JobListingTitle{
+  color:rgb(48, 47, 47); 
+    font-family: 'Oswald', sans-serif;
+    font-size: 200%; 
+    text-decoration: none;
+}
+
+.JobListingDescription{
+
+  color:rgb(48, 47, 47); 
+  font-size:120%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.JobPicture{
+  width: 100%;
+  border: 1px solid #16334a;
 }
 
 .jobBaseText{
@@ -10,6 +43,14 @@
   font-size: 300%; 
   text-decoration: none;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.JobOffersText{
+    color:rgb(48, 47, 47); 
+    font-family: 'Oswald', sans-serif;
+    font-size: 300%; 
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #4e4e4e;
 }
 
 .jobSubText{
