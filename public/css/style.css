@@ -31,9 +31,7 @@
   font-size:120%;
   font-family: 'Oswald', sans-serif;
 }
-.listing:link{
-  text-decoration: none;
-}
+
 .JobPicture{
   width: 100%;
   border: 1px solid #16334a;
@@ -151,7 +149,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('video_noaudio.mp4') black no-repeat center center scroll;
+    background: url('../img/video_noaudio.mp4') black no-repeat center center scroll;
   }
   header video {
     display: none;

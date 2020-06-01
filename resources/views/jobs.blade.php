@@ -25,6 +25,7 @@
         </div>
     </div>
     <div>
+        @if(!$jobs->isEmpty())
         @foreach($jobs as $job)
         <a href="{{ route('job',$job->id)}}" class="listing">
         <div class="row">
@@ -43,8 +44,16 @@
         </div>
         </a>
         @endforeach
+        @else
+       <div class="col text-center">
+        <h1>No Jobs</h1>
+       </div>
+        @endif
     </div>
-</div>>
+</div>
+<div class="row  justify-content-center">
+{{$jobs->render()}}
+</div>
 @include('layouts/footer')
 
 @stop

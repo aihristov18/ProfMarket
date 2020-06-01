@@ -12,13 +12,13 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $jobs=PostJob::all();
+        $jobs=PostJob::orderBy('created_at','desc');
 //        dd($jobs);
        return view('index',compact('jobs'));
     }
     public function jobs()
     {
-        $jobs=PostJob::all();
+        $jobs=PostJob::paginate(5);
 //        dd($jobs);
        return view('jobs',compact('jobs'));
     }
@@ -32,6 +32,15 @@ class FrontController extends Controller
 
 
         return view('job',compact('job','user'));
+    }
+
+    public function search(Request $request)
+    {
+       $keyword=$request->keyword;
+       $jobs=PostJob::where('title', 'LIKE', '%'.$keyword.'%')
+               ->orWhere('description', 'LIKE', '%'.$keyword.'%')
+               ->paginate(10);
+        return view('jobs',compact('jobs'));
     }
 
     public function postContact(Request $request)

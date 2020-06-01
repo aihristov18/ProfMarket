@@ -33,17 +33,19 @@
                 <p class="jobBaseText">Find your dream job!</p>
             </div>
         </div>
-
+        <form method="get" action="{{ route('search')}}">
         <div class="row">
             <div class="col mx-5">
                 <div id="searchBar" style="display:none">
+
                     <div class="md-form mt-3 mb-4">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <input class="form-control" name="keyword" type="text" placeholder="Search" aria-label="Search">
                     </div>
                 </div><img id="glass" style="cursor:pointer;" src="{{asset('img/white_Lupa.png')}}" onmouseover="changeGlass(true)"
                            onmouseout="changeGlass(false)" onclick="expandSearchBar();">
             </div>
         </div>
+        </form>
         <div class="row">
             <div class="col jobSubText pb-2" id="fadeInTextBox">Welcome to ProfMarket</div>
         </div>
